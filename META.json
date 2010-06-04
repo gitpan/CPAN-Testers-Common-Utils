@@ -1,0 +1,56 @@
+{
+   "abstract" : "Utility functions for CPAN Testers modules",
+   "author" : [
+      "David A Golden <dagolden@cpan>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Dist::Zilla version 4.101540",
+   "license" : "apache_2_0",
+   "meta-spec" : {
+      "url" : "http://github.com/dagolden/cpan-meta/",
+      "version" : 2
+   },
+   "name" : "CPAN-Testers-Common-Utils",
+   "no_index" : {
+      "directory" : [
+         "t",
+         "xt",
+         "examples",
+         "corpus"
+      ]
+   },
+   "prereqs" : {
+      "configure" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "6.31"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "Exporter" : "0",
+            "perl" : "5.006"
+         }
+      },
+      "test" : {
+         "requires" : {
+            "File::Find" : "0",
+            "File::Temp" : "0",
+            "Test::More" : "0"
+         }
+      }
+   },
+   "provides" : {
+      "CPAN::Testers::Common::Utils" : {
+         "file" : "lib/CPAN/Testers/Common/Utils.pm",
+         "version" : "0.002"
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "repository" : {
+         "url" : "http://github.com/dagolden/cpan-testers-common-utils"
+      }
+   },
+   "version" : "0.002"
+}
+

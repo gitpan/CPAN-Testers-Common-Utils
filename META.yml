@@ -1,12 +1,15 @@
 ---
 abstract: 'Utility functions for CPAN Testers modules'
 author:
-  - 'David Golden <dagolden@cpan.org>'
+  - 'David A Golden <dagolden@cpan>'
 build_requires:
-  Test::More: 0.47
+  File::Find: 0
+  File::Temp: 0
+  Test::More: 0
 configure_requires:
-  Module::Build: 0.35
-generated_by: 'Module::Build version 0.3515'
+  ExtUtils::MakeMaker: 6.31
+dynamic_config: 0
+generated_by: 'Dist::Zilla version 4.101540, CPAN::Meta::Converter version 2.101461'
 license: apache
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -14,17 +17,17 @@ meta-spec:
 name: CPAN-Testers-Common-Utils
 no_index:
   directory:
-    - examples
-    - inc
     - t
     - xt
+    - examples
+    - corpus
 provides:
   CPAN::Testers::Common::Utils:
     file: lib/CPAN/Testers/Common/Utils.pm
-    version: 0.001
+    version: 0.002
 requires:
+  Exporter: 0
   perl: 5.006
 resources:
-  bugtracker: http://rt.cpan.org/NoAuth/Bugs.html?Dist=CPAN-Testers-Common-Utils
-  repository: git://github.com/dagolden/cpan-testers-common-utils.git
-version: 0.001
+  repository: http://github.com/dagolden/cpan-testers-common-utils
+version: 0.002
